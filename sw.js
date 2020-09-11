@@ -4,7 +4,7 @@ importScripts('js/sw-utils.js'); // este es otro archivo que nosotros vamos a oc
 
 //
 
-const STATIC_CACHE = 'static-v2';
+const STATIC_CACHE = 'static-v3';
 const DYNAMIC_CACHE = 'dynamic-v1';
 const INMUTABLE_CACHE = 'inmutable-v1';
 
