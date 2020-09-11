@@ -1,5 +1,16 @@
+var url = window.location.href; //Obtiene todo el URL
+
+var swLocation = '/twit/sw.js' //Path donde se encuentra el service worker
+
 if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('/sw.js');
+
+    //validacion
+
+    if (url.includes('localhost')) {
+        swLocation = '/sw.js';
+    }
+
+    navigator.serviceWorker.register(swLocation);
 }
 
 // Referencias de jQuery
